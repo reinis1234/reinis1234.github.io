@@ -29,13 +29,17 @@
             if(x => 5) {
                 var zvuk = new Audio("zbytecny.mp3");
                 zvuk.play();
+                skore= skore + 1
+            document.getElementById("p1").innerHTML = "Tvůj počet Reiníků: " + skore;
             } 
             else if() 
             {
-                var zvuk1 = new Audio("reinis.mp3")         
-            }
-            skore = skore + 1
+                var zvuk1 = new Audio("reinis.mp3") 
+                zvuk1.play();
+            skore= skore + 1
             document.getElementById("p1").innerHTML = "Tvůj počet Reiníků: " + skore;
+            }
+             
         }
     </script>
 </html>
