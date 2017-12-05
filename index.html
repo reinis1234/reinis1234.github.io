@@ -45,16 +45,16 @@
             }
         }
         function zlatyreinik() {
-        
-        var skore;
-           
+       
             if (skore < 5) {
                 alert("Nemáš dostatek Reiníků!");
             }
             else {
                 skore = skore - 5
+                zvuk3 = new Audio ("sound.mp3")
+                zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                zvuk.play();
+                
             }
         
             
