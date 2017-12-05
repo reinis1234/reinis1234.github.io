@@ -1,0 +1,18 @@
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+}
+
+#p1 {
+    font: Sans-serif;
+    font-size: 75px;
+}
+
+#version {
+    position: absolute;
+    bottom: 0;
+    left: 10;
+}

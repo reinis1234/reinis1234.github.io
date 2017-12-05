@@ -1,0 +1,29 @@
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <p id="p1"></p>
+        
+        <div id="image">
+            <button type="submit" onclick="clickFunc()" style="background-color: transparent; border: none;"><img id="image" src="reinishead.jpg"></button>
+        </div>
+        
+        
+    </body>
+    
+    <script>
+          
+        var skore = 0;
+        document.getElementById("p1").innerHTML = "Tvůj počet Reiníků: " + skore;
+        
+        function clickFunc() {
+            var audio = new Audio('zbytecny.mp3');  
+            audio.play()
+            skore = skore + 1
+            
+            document.getElementById("p1").innerHTML = "Tvůj počet Reiníků: " + skore;
+        }
+    </script>
+</html>
