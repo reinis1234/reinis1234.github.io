@@ -24,7 +24,7 @@
         function clickFunc() {
             random = document.getElementById("p1").innerHTML = Math.floor((Math.random() * 10) + 1);
             
-            if(random => 5) {
+            if(random < 5) {
                 zvuk1 = new Audio("reinis.mp3");
                 zvuk1.play();
                 skore = skore + 1;
