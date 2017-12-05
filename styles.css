@@ -10,6 +10,9 @@
 #p1 {
     font: Sans-serif;
     font-size: 75px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #version {
