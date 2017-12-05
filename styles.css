@@ -22,3 +22,8 @@
     background-color: transparent; 
     border: none;
 }
+
+body {
+   background-image: url("light-veneer.png");
+   background-color: #cccccc;
+}
