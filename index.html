@@ -19,10 +19,22 @@
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků: " + skore;
         
         function clickFunc() {
-            var audio = new Audio('zbytecny.mp3');  
-            audio.play()
-            skore = skore + 1
             
+            
+            
+            
+            
+            var x = Math.floor((Math.random() * 10) + 1);
+            
+            if(x => 5) {
+                var zvuk = new Audio("zbytecny.mp3");
+                zvuk.play();
+            } 
+            else if() 
+            {
+                var zvuk1 = new Audio("reinis.mp3")         
+            }
+            skore = skore + 1
             document.getElementById("p1").innerHTML = "Tvůj počet Reiníků: " + skore;
         }
     </script>
