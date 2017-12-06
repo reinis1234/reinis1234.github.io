@@ -52,22 +52,22 @@
         function zlatyreinik() {
        
             if (skore < 100) {
-                alert("Zlatý Reiník stojí 100 reiníků!");
+                alert("Zlatý Reiník stojí 100 Reiníků!");
             }
             else {
                 skore = skore - 100
                 zvuk3 = new Audio ("zlaty.mp3")
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                zlat = Math.round((ngrandma + 1) * 10) / 10;
+                zlat = Math.round((zlat + 1) * 10) / 10;
                 
             }
         }
         
         window.setInterval(function() {
                 skore = Math.round((skore + zlat) * 10) / 10;
-                document.getElementById("p1").innerHTML = "Tvůj počet Pavlíků je: " + skore;
-        }
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+        }, 1000)
                            
     </script>
     </body>     
