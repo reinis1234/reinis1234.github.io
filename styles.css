@@ -31,13 +31,12 @@ body {
    background-color: #cccccc;
 }
 
-#image2{
-    
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    
-    border-radius: 50%;
+#imzge2 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 70%;
+    left: 0;
 }
 
 .topright {
