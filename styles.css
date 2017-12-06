@@ -35,7 +35,7 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 60%;
-    left: 90%;
+    left: 85%;
 }
 
 #separatorLeft, #separatorRight
@@ -45,7 +45,6 @@ body {
 	background:url(img/panelVertical.png?v=2) repeat-y;
 	background:url(img/panelGradientTop.png) no-repeat top left,url(img/panelGradientBottom.png) no-repeat bottom left,url(img/panelVertical.png?v=2) repeat-y;
 	position: relative;
-	top:0px;
 	bottom:75%;
 	display: flex;
 	align-items: center;
