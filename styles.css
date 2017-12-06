@@ -1,9 +1,8 @@
 #image{
     
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    right: 75%;
+    bottom 50%;
     border-radius: 50%;
 }
 
