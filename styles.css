@@ -2,7 +2,7 @@
     
     display: flex;
     right: 75%;
-    bottom 50%;
+    bottom 45%;
     border-radius: 50%;
 }
 
@@ -34,12 +34,24 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    bottom: 60%;
+    bottom: 65%;
     left: 85%;
 }
 
 #levyPanel {
-    align-items:center;
-     left: 50;
+     width:16px;
+	height:100%;
+    top:0px;
+	z-index:100;
+    left: 35%;
+    position: absolute;
+    
+}
 
-
+#pravyPanel {
+     width:16px;
+	height:100%;
+    top:0px;
+	z-index:100;
+    right: 20%;
+    position: absolute;
