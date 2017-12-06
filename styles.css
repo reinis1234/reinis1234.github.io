@@ -39,13 +39,3 @@ body {
     left: 0;
 }
 
-.topright {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 18px;
-}
-    
-    .container {
-    position: relative;
-}
