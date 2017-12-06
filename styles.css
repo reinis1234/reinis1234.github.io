@@ -38,7 +38,7 @@ body {
     left: 75%;
 }
 
-.separatorLeft, .separatorRight
+#separatorLeft, #separatorRight
 {
 	width:16px;
 	height:100%;
@@ -49,11 +49,11 @@ body {
 	bottom:0px;
 	z-index:100;
 }
-.separatorLeft
+#separatorLeft
 {
 	left:40%;
 }
-.separatorRight
+#separatorRight
 {
 	right:300px;
 }
