@@ -29,6 +29,7 @@
     <script>
         var skore = 0;
         var random, zvuk1, zvuk2;
+        var zlat;
         
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
@@ -58,9 +59,16 @@
                 zvuk3 = new Audio ("zlaty.mp3")
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                zlat = Math.round((ngrandma + 1) * 10) / 10;
                 
             }
         }
+        
+        window.setInterval(function() {
+                skore = Math.round((skore + zlat) * 10) / 10;
+                document.getElementById("p1").innerHTML = "Tvůj počet Pavlíků je: " + skore;
+        }
+                           
     </script>
     </body>     
 </html>
