@@ -45,11 +45,11 @@
         }
         function zlatyreinik() {
        
-            if (skore < 5) {
-                alert("Nemáš dostatek Reiníků!");
+            if (skore < 100) {
+                alert("Zlatý Reiník stojí 100 reiníků!");
             }
             else {
-                skore = skore - 5
+                skore = skore - 100
                 zvuk3 = new Audio ("zlaty.mp3")
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
