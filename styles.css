@@ -46,7 +46,7 @@ body {
 	background:url(img/panelGradientTop.png) no-repeat top left,url(img/panelGradientBottom.png) no-repeat bottom left,url(img/panelVertical.png?v=2) repeat-y;
 	position: relative;
 	top:0px;
-	bottom:0px;
+	bottom:75%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
