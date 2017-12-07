@@ -8,14 +8,14 @@
 
 #p1 {
     font: Sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     align-items: center;
     justify-content: center;
 }
 
 #p2 {
     font: Sans-serif;
-    font-size: 30px;
+    font-size: 35px;
 }
 #version {
     position: absolute;
@@ -64,7 +64,13 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    bottom: 45%;
+    bottom: 40%;
     left: 85%;
+}
+
+#paypal {
+    position: absolute;
+    bottom: 70%;
+    right: 50%;
 }
     
