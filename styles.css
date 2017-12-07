@@ -11,9 +11,12 @@
     font-size: 30px;
     align-items: center;
     justify-content: center;
-    right 20%;
 }
 
+#p2 {
+    font: Sans-serif;
+    font-size: 35px;
+}
 #version {
     position: absolute;
     bottom: 0;
@@ -51,7 +54,17 @@ body {
 #pravyPanel {
      width:16px;
 	height:100%;
-    bottom:0px;
+    top:0px;
 	z-index:100;
     right: 20%;
     position: absolute;
+}
+
+    #image3 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 45%;
+    left: 85%;
+}
+    
