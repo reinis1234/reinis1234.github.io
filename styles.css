@@ -51,7 +51,7 @@ body {
 #pravyPanel {
      width:16px;
 	height:110%;
-    top:0px;
+    bottom:0px;
 	z-index:100;
     right: 20%;
     position: absolute;
