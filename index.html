@@ -7,6 +7,7 @@
     
     <body>
         <p id="p1"></p>
+        <p id="p2"></p>
         
         <div id="image">
             <button id="headbutton" type="submit" onclick="clickFunc()"><img id="image" src="reinishead.jpg"></button>
@@ -16,20 +17,25 @@
             <button id="headbutton" type="submit" onclick="zlatyreinik()"><img id="image" src="zlatyreinik90.png"></button>
         </div>
         
+         <div id="image3">
+            <button id="headbutton" type="submit" onclick="gainik()"><img id="image" src="geinis.png"></button>
+        </div>
+        
          <div id="levyPanel">
             <img id="levyPanel" src="panelVertical.png">
         </div>
         
          <div id="pravyPanel">
-            <img id="pravyPanel" src="panelVertical-2.png">
+            <img id="pravyPanel" src="panelVertical.png">
         </div>
         
         <p id="version"> Reiniš Industries © 2017</p>
     
     <script>
         var skore = 0;
-        var random, zvuk1, zvuk2, zvuk3;
+        var random, zvuk1, zvuk2, zvuk3, zvuk4;
         var zlat = 0;
+        var gay= 0;
         
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
@@ -69,10 +75,35 @@
             }
         }
         
+        function gainik() {
+       
+            if (skore < 1000) {
+                alert("Gainík stojí 1000 Reiníků!");
+            }
+            
+            else {
+                
+                skore = skore - 1000
+                zvuk4 = new Audio ("pusa.mp3")
+                zvuk4.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                gay = Math.round((gay + 100) * 10) / 10;
+                
+            }
+        }
+        
         window.setInterval(function() {
                 skore = Math.round((skore + zlat) * 10) / 10;
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            
+            skore = Math.round((skore + gay) * 10) / 10;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;  
+            
+            autoskore = zlat + gay;
+                document.getElementById("p2").innerHTML = "Počet Reiníků za sekundu: " + autoskore;
+            
         }, 1000)
+        
          
     </script>
     </body>     
