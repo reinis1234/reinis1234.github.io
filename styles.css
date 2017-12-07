@@ -69,8 +69,9 @@ body {
 }
 
 #paypal {
-    position: absolute;
-    bottom: 70%;
-    right: 50%;
+    position: fixed;
+    bottom: 80%;
+    right: 37%;
 }
+    
     
