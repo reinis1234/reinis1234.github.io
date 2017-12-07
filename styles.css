@@ -8,14 +8,14 @@
 
 #p1 {
     font: Sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     align-items: center;
     justify-content: center;
 }
 
 #p2 {
     font: Sans-serif;
-    font-size: 35px;
+    font-size: 30px;
 }
 #version {
     position: absolute;
