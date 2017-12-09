@@ -69,7 +69,7 @@ body {
 }
 
 #paypal {
-    position: fixed;
+    position: absolute;
     bottom: 80%;
     right: 35%;
 }
@@ -77,4 +77,11 @@ body {
 table, th, td {
     border: 1px solid black;
 }
-    
+
+table#donor {
+	postition: absolute;
+	bottom: 50%;
+	right: 35%;
+}
+	
+}
