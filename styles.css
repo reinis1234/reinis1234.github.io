@@ -78,7 +78,7 @@ table, th, td {
     border: 1px solid black;
 }
 
-table#donor {
+#donor {
 	postition: absolute;
 	bottom: 50%;
 	right: 35%;
