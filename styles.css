@@ -77,3 +77,10 @@ body {
 table, th, td {
     border: 1px solid black;
 }
+
+table#t01 {
+    width: 30%; 
+    bottom: 50%;
+    right: 27%;
+            position: absolute;
+	{
