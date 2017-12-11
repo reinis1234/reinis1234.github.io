@@ -74,7 +74,7 @@ body {
     right: 35%;
 }
     
-table, th, td {
+th, td {
     border: 1px solid black;
 }
 
@@ -83,6 +83,7 @@ table, th, td {
 	bottom: 50%;
 	right: 35%;
 	width: 50%;
+	border: 1px solid black;
 }
 	
 
