@@ -79,7 +79,7 @@ table, th, td {
 }
 
 #donor {
-	postition: absolute;
+	postition: flex;
 	bottom: 50%;
 	right: 35%;
 	width: 50%;
