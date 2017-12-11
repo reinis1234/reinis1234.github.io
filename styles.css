@@ -77,13 +77,3 @@ body {
 table, th, td {
     border: 1px solid black;
 }
-
-#donor {
-	postition: flex;
-	bottom: 50%;
-	right: 35%;
-	width: 50%;
-	
-}
-	
-
