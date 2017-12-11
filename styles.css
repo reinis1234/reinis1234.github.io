@@ -83,4 +83,10 @@ table#t01 {
     bottom: 50%;
     right: 27%;
             position: absolute;
-	{
+}
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
