@@ -1,4 +1,4 @@
-#image{
+.image{
     
     display: flex;
     right: 75%;
@@ -6,24 +6,24 @@
     border-radius: 50%;
 }
 
-#p1 {
+.p1 {
     font: Sans-serif;
     font-size: 30px;
     align-items: center;
     justify-content: center;
 }
 
-#p2 {
+.p2 {
     font: Sans-serif;
     font-size: 20px;
 }
-#version {
+.version {
     position: absolute;
     bottom: 0;
     left: 10;
 }
 
-#headbutton {
+.headbutton {
     background-color: transparent; 
     border: none;
 }
@@ -33,7 +33,7 @@ body {
    background-color: #cccccc;
 }
 
-#image2 {
+.image2 {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@ body {
     left: 85%;
 }
 
-#levyPanel {
+.levyPanel {
      width:16px;
 	height:100%;
     top:0px;
@@ -51,7 +51,7 @@ body {
     
 }
 
-#pravyPanel {
+.pravyPanel {
      width:16px;
 	height:100%;
     top:0px;
@@ -60,7 +60,7 @@ body {
     position: absolute;
 }
 
-    #image3 {
+.image3 {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -85,8 +85,23 @@ table#t01 {
             position: absolute;
 }
 
-html, body {
-    margin: 0; 
-    height: 100%; 
-    overflow: hidden
+.image4 {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 20%;
+    left: 85%;
+}
+
+body {
+   position: relative;
+}
+#reinici {
+  width: 600px;
+  ...rules ...
+}
+
+#left {
+   position: fixed;
+   left: 610px;
 }
