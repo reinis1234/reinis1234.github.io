@@ -7,60 +7,55 @@
     </head>
     
     <body>
-        <p id="p1"></p>
-        <p id="p2"></p>
         
+        <div class = "left">
+        
+        <div class="levyPanel">
+        
+        <p class="p1"></p>
+        <p class="p2"></p>
+
         <table id="t01">
             <caption>Top Donators</caption>
-    <tr>
+    
+            <tr>
     <th>Jméno</th>
     <th>Částka</th> 
-      <tr>
-          <tr>
-            <td>Pavel Novotný</td>
+          
+            <tr>
+    <td>Pavel Novotný</td>
     <td>11Kč</td> 
   </tr>
-    
+   
+            <tr>
     <td>Matyáš Doležal</td>
     <td>10Kč</td> 
   </tr>
-  
-  <tr>
-  </tr>
-            </tr>
+     
+            <tr>
     <td>Antonín Hnízdo</td>
     <td>7Kč</td> 
   </tr>
+     
             <tr>
     <td>Jakub Kozler</td>
     <td>5Kč</td> 
   </tr>
-  <tr>
-      
-      <tr>
+     
+            <tr>
     <td>Štěpán Beran</td>
     <td>3Kč</td> 
+        </tr>
 </table>
+
+            
+         
+            <img class="levyPanel" src="panelVertical.png">
         
-        <div id="image">
-            <button id="headbutton" type="submit" onclick="clickFunc()"><img id="image" src="reinishead.jpg"></button>
-        </div>
+            </div>
         
-        <div id="image2">
-            <button id="headbutton" type="submit" onclick="zlatyreinik()"><img id="image" src="zlatySe3.png"></button>
-        </div>
-        
-         <div id="image3">
-            <button id="headbutton" type="submit" onclick="gainik()"><img id="image" src="geinisSe.jpg"></button>
-        </div>
-        
-         <div id="levyPanel">
-            <img id="levyPanel" src="panelVertical.png">
-        </div>
-        
-         <div id="pravyPanel">
-            <img id="pravyPanel" src="panelVertical.png">
-        </div>
+         
+            <img class="pravyPanel" src="panelVertical.png">
   
         <div id = "paypal">        
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -70,14 +65,36 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
         </div>
+            
+        <p class="version"> Reiniš Industries © 2017</p>
 
-        <p id="version"> Reiniš Industries © 2017</p>
+            </div>
+
+             <div id = "reinici">
+                 
+             <div class="image">
+            <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.jpg"></button>
+        </div>
+        
+        <div class="image2">
+            <button class="headbutton" type="submit" onclick="zlatyreinik()"><img class="image" src="zlatySe3.png"></button>
+        </div>
+        
+         <div class="image3">
+            <button class="headbutton" type="submit" onclick="gainik()"><img class="image" src="geinisSe.jpg"></button>
+        </div>
+
+        <div class="image4">
+            <button class="headbutton" type="submit" onclick="catnis()"><img class="image" src="catnis.jpg"></button>
+        </div>
+             </div>
     
     <script>
         var skore = 0;
-        var random, zvuk1, zvuk2, zvuk3, zvuk4;
+        var random, zvuk1, zvuk2, zvuk3, zvuk4, zvuk5;
         var zlat = 0;
-        var gay= 0;
+        var gay = 0;
+        var cat = 0;
         
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
@@ -100,6 +117,21 @@
             }
         }
         
+        function catnis() {
+       
+            if (skore < 10) {
+                alert("Catniš stojí 10 Reiníků!");
+            }
+            
+            else {
+                skore = skore - 10
+                zvuk5 = new Audio ("meow.mp3")
+                zvuk5.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                 cat = Math.round((cat + 1) * 10) / 10;
+            }
+        }
+        
         function zlatyreinik() {
        
             if (skore < 100) {
@@ -113,7 +145,7 @@
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
                 zlat = Math.round((zlat + 10) * 10) / 10;
-                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+                
             }
         }
         
@@ -130,8 +162,6 @@
                 zvuk4.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
                 gay = Math.round((gay + 100) * 10) / 10;
-                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
-                
             }
         }
         
@@ -148,5 +178,5 @@
         }, 1000)
          
     </script>
-    </body>     
+    </body>
 </html>
