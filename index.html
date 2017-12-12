@@ -79,7 +79,7 @@
     
     <script>
         var skore = 0;
-        var random, 
+        var random;
         var zvuk1, zvuk2, zvuk3, zvuk4, zvuk5;
         var zlat = 0;
         var gay = 0;
@@ -118,6 +118,7 @@
                 zvuk5.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
                 cat = Math.round((cat + 1) * 10) / 10;
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
             }
         }
         
@@ -129,11 +130,12 @@
             
             else {
                 
-                skore = skore - 100
-                zvuk3 = new Audio ("zlaty.mp3")
+                skore = skore - 100;
+                zvuk3 = new Audio ("zlaty.mp3");
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
                 zlat = Math.round((zlat + 10) * 10) / 10;
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
                 
             }
         }
@@ -146,17 +148,18 @@
             
             else {
                 
-                skore = skore - 1000
-                zvuk4 = new Audio ("pusa.mp3")
+                skore = skore - 1000;
+                zvuk4 = new Audio ("pusa.mp3");
                 zvuk4.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
                 gay = Math.round((gay + 100) * 10) / 10;
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
             }
         }
         
         window.setInterval(function() {
             
-            skore = Math.round((skore + cat) * 1) / 10;
+            skore = Math.round((skore + cat) * 10) / 10;
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;  
                 
             skore = Math.round((skore + zlat) * 10) / 10;
