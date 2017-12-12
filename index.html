@@ -6,11 +6,9 @@
        
     </head>
     
-    <body>
+    <body id = "container">
         
         <div class = "left">
-        
-        <div class="levyPanel">
         
         <p class="p1"></p>
         <p class="p2"></p>
@@ -52,9 +50,6 @@
          
             <img class="levyPanel" src="panelVertical.png">
         
-            </div>
-        
-         
             <img class="pravyPanel" src="panelVertical.png">
   
         <div id = "paypal">        
@@ -70,8 +65,6 @@
 
             </div>
 
-             <div id = "reinici">
-                 
              <div class="image">
             <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.jpg"></button>
         </div>
@@ -87,7 +80,6 @@
         <div class="image4">
             <button class="headbutton" type="submit" onclick="catnis()"><img class="image" src="catnis.jpg"></button>
         </div>
-             </div>
     
     <script>
         var skore = 0;
@@ -128,7 +120,7 @@
                 zvuk5 = new Audio ("meow.mp3")
                 zvuk5.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                 cat = Math.round(cat + 1);
+                 cat = Math.round((cat + 1) * 10) / 10;
             }
         }
         
@@ -144,7 +136,7 @@
                 zvuk3 = new Audio ("zlaty.mp3")
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                zlat = Math.round(zlat + 10);
+                zlat = Math.round((zlat + 10) * 10) / 10;
                 
             }
         }
@@ -161,15 +153,15 @@
                 zvuk4 = new Audio ("pusa.mp3")
                 zvuk4.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                gay = Math.round(gay + 100);
+                gay = Math.round((gay + 100) * 10) / 10;
             }
         }
         
         window.setInterval(function() {
-                skore = Math.round(skore + zlat);
+                skore = Math.round((skore + zlat) * 10) / 10;
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
             
-            skore = Math.round(skore + gay);
+            skore = Math.round((skore + gay) * 10) / 10;
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;  
             
             autoskore = zlat + gay;
