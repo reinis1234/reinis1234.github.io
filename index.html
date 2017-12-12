@@ -83,7 +83,8 @@
     
     <script>
         var skore = 0;
-        var random, zvuk1, zvuk2, zvuk3, zvuk4, zvuk5;
+        var random, 
+        var zvuk1, zvuk2, zvuk3, zvuk4, zvuk5;
         var zlat = 0;
         var gay = 0;
         var cat = 0;
@@ -117,7 +118,7 @@
             
             else {
                 skore = skore - 10
-                zvuk5 = new Audio ("meow.mp3")
+                zvuk5 = new Audio ("meow.mp3");
                 zvuk5.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
                  cat = Math.round((cat + 1) * 10) / 10;
@@ -144,7 +145,7 @@
         function gainik() {
        
             if (skore < 1000) {
-                alert("Gainík stojí 1000 Reiníků!");
+                alert("Geiník stojí 1000 Reiníků!");
             }
             
             else {
