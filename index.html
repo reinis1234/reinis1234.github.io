@@ -8,8 +8,6 @@
     
     <body id = "container">
         
-        <div class = "left">
-        
         <p class="p1"></p>
         <p class="p2"></p>
 
@@ -63,8 +61,6 @@
             
         <p class="version"> Reiniš Industries © 2017</p>
 
-            </div>
-
              <div class="image">
             <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.jpg"></button>
         </div>
@@ -117,7 +113,7 @@
             }
             
             else {
-                skore = skore - 10
+                skore = skore - 10;
                 zvuk5 = new Audio ("meow.mp3");
                 zvuk5.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
