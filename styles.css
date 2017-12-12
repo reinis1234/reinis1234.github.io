@@ -96,12 +96,3 @@ table#t01 {
 body {
    position: relative;
 }
-#reinici {
-  width: 600px;
-  ...rules ...
-}
-
-#left {
-   position: fixed;
-   left: 610px;
-}
