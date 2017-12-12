@@ -128,7 +128,7 @@
                 zvuk5 = new Audio ("meow.mp3")
                 zvuk5.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                 cat = Math.round((cat + 1) * 10) / 10;
+                 cat = Math.round(cat + 1);
             }
         }
         
@@ -144,7 +144,7 @@
                 zvuk3 = new Audio ("zlaty.mp3")
                 zvuk3.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                zlat = Math.round((zlat + 10) * 10) / 10;
+                zlat = Math.round(zlat + 10);
                 
             }
         }
@@ -161,15 +161,15 @@
                 zvuk4 = new Audio ("pusa.mp3")
                 zvuk4.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                gay = Math.round((gay + 100) * 10) / 10;
+                gay = Math.round(gay + 100);
             }
         }
         
         window.setInterval(function() {
-                skore = Math.round((skore + zlat) * 10) / 10;
+                skore = Math.round(skore + zlat);
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
             
-            skore = Math.round((skore + gay) * 10) / 10;
+            skore = Math.round(skore + gay);
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;  
             
             autoskore = zlat + gay;
