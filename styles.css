@@ -103,7 +103,7 @@ body {
     
     top: 0;
     left: 0%;  /* right margin */
-    width: 90%;
+    width: 100%;
     
     height: 100%;
     
@@ -111,7 +111,7 @@ body {
 
 #reinici {
     margin-left: 15%;   /* left margin */
-    margin-right: 30%;
+    margin-right: 15%;
 }
 
 .image5 {
