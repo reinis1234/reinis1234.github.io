@@ -112,3 +112,11 @@ body {
     margin-left: 15%;   /* left margin */
     margin-right: 30%;
 }
+
+.image5 {
+	position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: 5%;
+    left: 85%;
+}
