@@ -96,3 +96,19 @@ table#t01 {
 body {
    position: relative;
 }
+
+#leftPanel {
+    position: fixed;
+    
+    top: 0;
+    left: 0%;  /* right margin */
+    width: 90%;
+    
+    height: 99%;
+    
+}
+
+#reinici {
+    margin-left: 15%;   /* left margin */
+    margin-right: 30%;
+}
