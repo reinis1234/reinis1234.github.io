@@ -44,9 +44,9 @@ body {
 
 .levyPanel {
      width:16px;
-	height:100%;
+     height:100%;
     top:0px;
-	z-index:100;
+    z-index:100;
     left: 35%;
     position: absolute;
     
@@ -115,7 +115,7 @@ body {
 }
 
 .image5 {
-	position: relative;
+    position: relative;
     align-items: center;
     justify-content: center;
     bottom: 5%;
