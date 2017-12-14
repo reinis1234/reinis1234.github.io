@@ -31,7 +31,7 @@
 body {
    background-image: url("light-veneer.png");
    background-color: #cccccc;
-   background-position: fixed;
+   background-position: right top;
 }
 
 .image2 {
@@ -44,9 +44,9 @@ body {
 
 .levyPanel {
      width:16px;
-     height:100%;
+	height:100%;
     top:0px;
-    z-index:100;
+	z-index:100;
     left: 35%;
     position: absolute;
     
@@ -71,7 +71,7 @@ body {
 
 #paypal {
     position: absolute;
-    bottom: 85%;
+    bottom: 90%;
     right: 35%;
 }
     
@@ -102,7 +102,7 @@ body {
     position: fixed;
     
     top: 0;
-    left: 0%;  /* right margin */
+    left: 0%;  /* content */
     width: 100%;
     
     height: 100%;
@@ -110,14 +110,16 @@ body {
 }
 
 #reinici {
-    margin-left: 15%;   /* left margin */
-    margin-right: 15%;
+    margin-left: 30 %;   /* reinici */
+    margin-right: 30%;
 }
 
 .image5 {
-    position: relative;
-    align-items: center;
+	position: relative;
+    align-items: center; 
     justify-content: center;
     bottom: 5%;
     left: 85%;
 }
+
+html,body { margin: 0; padding: 0; }
