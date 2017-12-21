@@ -1,0 +1,328 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+        <title>Reiniš Clicker</title>
+       
+    </head>
+    
+    <body>
+        <div id = "game_shopPart">
+            <div id = "game_shoppingMenu">
+                <div id ="game_shoppingIcons">
+                    
+                    
+                    <button type = submit onclick ="catnis()" id = "game_shopButton0" class = "game_shopButton" style = opacity: 1;>
+                        <div class = "game_shopIcon" class = game_shopIcon0 style = "background-image:url('meownis.png')"; 
+                             background-position: initial initial; 
+                             backgroud-repeat: initial initial;>
+                        </div>
+                        <div class ="game_shopText" >
+                            <div class = "game_shopName">Meowniš</div>
+                            <br>
+                            <br>
+                            <div class ="game_shopTextfield"> 
+                                Generuje: 
+                                <br>
+                                 <p id = "generaceCat" style="color:green; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                            
+                            <div class ="game_shopTextfield"> 
+                                Vlastníš: 
+                                <br>
+                                <p id = "pocetCat" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                                </div>
+                            
+                                 <div class ="game_shopTextfield"> 
+                                Stojí: 
+                                <br>
+                                <p id = "cenaCatH" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                                
+                            
+                        </div>
+                    </button>
+                    
+                    
+                    <button type = submit onclick ="zlatyreinik()" id = "game_shopButton1" class = "game_shopButton" style = opacity: 1;>
+                        <div class = "game_shopIcon" class = game_shopIcon1 style = "background-image:url('zlatynis.png')"; 
+                             background-position: initial initial; 
+                             backgroud-repeat: initial initial;>
+                        </div>
+                        <div class ="game_shopText" >
+                            <div class = "game_shopName">Zlatý Reiník</div>
+                            <div class ="game_shopTextfield"> 
+                                Generuje: 
+                                <br>
+                                 <p id = "generaceZlat" style="color:green; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                            
+                            <div class ="game_shopTextfield"> 
+                                Vlastníš: 
+                                <br>
+                                <p id = "pocetZlat" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                                </div>
+                            
+                                 <div class ="game_shopTextfield"> 
+                                Stojí: 
+                                <br>
+                                <p id = "cenaZlatH" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    
+                    <button type = submit onclick ="gainik()" id = "game_shopButton2" class = "game_shopButton" style = opacity: 1;>
+                        <div class = "game_shopIcon" class = game_shopIcon2 style = "background-image:url('geinis.png')"; 
+                             background-position: initial initial; 
+                             backgroud-repeat: initial initial;>
+                        </div>
+                        <div class ="game_shopText" >
+                            <div class = "game_shopName">Geiniš</div>
+                            <div class ="game_shopTextfield"> 
+                                Generuje: 
+                                <br>
+                                 <p id = "generaceGay" style="color:green; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                            
+                            <div class ="game_shopTextfield"> 
+                                Vlastníš:
+                                <br>
+                                <p id = "pocetGay" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                                </div>
+                            
+                                 <div class ="game_shopTextfield"> 
+                                Stojí: 
+                                <br>
+                                <p id = "cenaGayH" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    
+                </div>
+                </div>
+        </div>
+        
+        <p id="p1"></p>
+        <p id="p2"></p>
+        
+        
+        
+        <table id="t01">
+            <caption>Top Donators</caption>
+    
+            <tr>
+    <th>Jméno</th>
+    <th>Částka</th> 
+                
+                <tr>
+    <td>Tomáš Vrkota</td>
+    <td>50Kč</td> 
+  </tr>
+          
+            <tr>
+    <td>Pavel Novotný</td>
+    <td>11Kč</td> 
+  </tr>
+   
+            <tr>
+    <td>Matyáš Doležal</td>
+    <td>10Kč</td> 
+  </tr>
+     
+            <tr>
+    <td>Antonín Hnízdo</td>
+    <td>7Kč</td> 
+  </tr>
+     
+            <tr>
+    <td>Jakub Kozler</td>
+    <td>5Kč</td> 
+  </tr>
+     
+            <tr>
+    <td>Štěpán Beran</td>
+    <td>3Kč</td> 
+        </tr>
+</table>
+
+            
+         
+            <img class="levyPanel" src="panelVertical.png">
+        
+            <img class="pravyPanel" src="panelVertical.png">
+  
+        <div id = "paypal">        
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="XZNX7TANCE7B8">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+        </div>
+            
+        <p class="version"> Reiniš Industries © 2017</p>
+
+             <div class="image">
+            <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.png"></button>
+        </div>
+        
+        
+                
+    
+        <script>
+        var skore = 0;
+        var random;
+        var zvuk1, zvuk2, zvuk3, zvuk4, zvuk5, zvuk6;
+        var zlat = 0;
+        var gay = 0;
+        var cat = 0;
+        var rap = 0;
+        var cenacat = 10;
+        var cenazlat = 100;    
+        var cenagay = 1000;
+        var cenarap = 10000;
+            
+        document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+        
+        function clickFunc() {
+            random = document.getElementById("p1").innerHTML = Math.floor((Math.random() * 10) + 1);
+            
+            if(random < 5) {
+                
+                zvuk1 = new Audio("reinis.mp3");
+                zvuk1.play();
+                skore = skore + 1;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            } 
+            
+            else {
+                
+                zvuk2 = new Audio("zbytecny.mp3");
+                zvuk2.play();
+                skore = skore + 1;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            }
+        }
+        
+        function catnis() {
+       
+            if (skore < cenacat) {
+                alert("Catniš stojí " + cenacat + " Reiníků!");
+            }
+            
+            else {
+                
+                skore = skore - cenacat;
+                cenacat = Math.round(cenacat + (cenacat/100) * 17);
+                zvuk5 = new Audio ("meow.mp3");
+                zvuk5.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                cat = Math.round(cat + 1);
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+                document.getElementById("generaceCat").innerHTML = "+" + cat;
+                document.getElementById("cenaCatH").innerHTML = cenacat;
+                document.getElementById("pocetCat").innerHTML = cat;
+        
+            }
+        }
+        
+        function zlatyreinik() {
+       
+            if (skore < cenazlat) {
+                
+                alert("Zlatý Reiník stojí " + cenazlat + " Reiníků!");
+            }
+            
+            else {
+                
+                skore = skore - cenazlat;
+                cenazlat = Math.round(cenazlat + (cenazlat/100) * 17);
+                zvuk3 = new Audio ("zlaty.mp3");
+                zvuk3.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                zlat = Math.round(zlat + 10);
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+                document.getElementById("generaceZlat").innerHTML = "+" + zlat;
+                document.getElementById("cenaZlatH").innerHTML = cenazlat;
+                document.getElementById("pocetZlat").innerHTML = zlat / 10;
+            }
+        }
+        
+        function gainik() {
+       
+            if (skore < cenagay) {
+                
+                alert("Geiníš stojí " + cenagay + " Reiníků!");
+            }
+            
+            else {
+                
+                skore = skore - cenagay;
+                cenagay = Math.round(cenagay + (cenagay/100) * 17)
+                zvuk4 = new Audio ("pusa.mp3");
+                zvuk4.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                gay = Math.round(gay + 100);
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+                document.getElementById("generaceGay").innerHTML = "+" + gay;
+                document.getElementById("cenaGayH").innerHTML = cenagay;
+                document.getElementById("pocetGay").innerHTML = gay / 100;
+            }
+        }
+            
+            function rapnis() {
+       
+            if (skore < cenarap) {
+                
+                alert("Rapniš stojí " + cenarap + " Reiníků!");
+            }
+            
+            else {
+                
+                skore = skore - cenarap;
+                cenarap = Math.round(cenarap + (cenarap/100) * 17)
+                zvuk6 = new Audio ("yeah.mp3");
+                zvuk6.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                rap = Math.round(rap + 100);
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+            }
+        }
+        
+        window.setInterval(function() {
+            
+            skore = Math.round(skore + cat);
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;  
+                
+            skore = Math.round(skore + zlat);
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            
+            skore = Math.round(skore + gay);
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            
+             skore = Math.round(skore + rap);
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            
+             
+            autoskore = zlat + gay + cat + rap;
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+            
+        }, 1000)
+            
+            document.getElementById("generaceCat").innerHTML = "+" + cat;
+            document.getElementById("cenaCatH").innerHTML = cenacat;
+            document.getElementById("pocetCat").innerHTML = cat;
+            
+            document.getElementById("generaceZlat").innerHTML = "+" + zlat;
+            document.getElementById("cenaZlatH").innerHTML = cenazlat;
+            document.getElementById("pocetZlat").innerHTML = zlat / 10;
+            
+            document.getElementById("generaceGay").innerHTML = "+" + gay;
+            document.getElementById("cenaGayH").innerHTML = cenagay;
+            document.getElementById("pocetGay").innerHTML = gay / 100;
+                    
+    </script>
+    </body>
+</html>
