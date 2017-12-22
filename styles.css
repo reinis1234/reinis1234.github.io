@@ -34,21 +34,14 @@ body {
    background-position: right top;
 }
 
-.image2 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    bottom: 65%;
-    left: 85%;
-}
 
 .levyPanel {
-     width:16px;
-	height:100%;
+    width:16px;
+	height:110%;
     top:0px;
 	z-index:100;
     left: 30%;
-    position: absolute;
+    position: fixed;
     
 }
 
@@ -58,21 +51,16 @@ body {
     top:0px;
 	z-index:100;
     right: 32%;
-    position: absolute;
+    position: fixed;
+
 }
 
-.image3 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    bottom: 45%;
-    left: 85%;
-}
+
 
 #paypal {
-    position: absolute;
     bottom: 40%;
     right: 45%;
+    position: fixed;
 }
     
 table, th, td {
@@ -83,16 +71,9 @@ table#t01 {
     width: 30%; 
     bottom: 0%;
     right: 35%;
-    position: absolute;
+    position: fixed;
 }
 
-.image4 {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    bottom: 20%;
-    left: 85%;
-}
 
 body {
    position: relative;
@@ -157,8 +138,10 @@ body {
     margin-bottom: 10px;
     
 }
-
-
+    
+#hlava{
+    position: fixed;
+}
 
 
 
