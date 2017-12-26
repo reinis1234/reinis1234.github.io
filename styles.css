@@ -89,24 +89,21 @@ body {
     float: right;
     width: 410px;
     height: 100%;
-    margin-right: 13px;
-    
 }
 
 #game_shoppingMenu{
     float: left;
     width: 100%;
     padding: 10px;
+    margin-right: 10px;
 }
 
 .game_shopButton {
-    width: 100%;
+    width: 97%;
     height: 110px;
     background-color: #262626;
     margin-bottom: 10px;
     margin-left: 10px;
-    margin-right: 10px;
-    
 }
 
 .game_shopIcon {
@@ -136,12 +133,11 @@ body {
 }
 
 .game_shopButtonGay{
-    width: 100%;
+    width: 97%;
     height: 110px;
     background-color:  #FF1493;
     margin-bottom: 10px;
     margin-left: 10px;
-    margin-right: 10px;
     
 }
     
@@ -161,5 +157,10 @@ h1 {
 }
 
 #panelh{
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+body {
+    
+    width: 98%;
 }
