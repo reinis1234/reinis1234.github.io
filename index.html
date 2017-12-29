@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         
+        
         <title>Reiniš Clicker</title>
        
     </head>
@@ -46,15 +47,12 @@
                                 </div>
                             
                                  <div class ="game_shopTextfield"> 
-                                Stojí: 
+                                Cena: 
                                 <br>
                                 <p id = "cenaCatH" style="color:white; font-size:14px; font-weight: bold;"> </p>
                             </div>
-                                
-                            
                         </div>
                     </button>
-                    
                     
                     <button type = submit onclick ="zlatyreinik()" id = "game_shopButton1" class = "game_shopButton" style = opacity: 1;>
                         <div class = "game_shopIcon" class = game_shopIcon1 style = "background-image:url('zlatynis.png')"; 
@@ -77,7 +75,7 @@
                                 </div>
                             
                                  <div class ="game_shopTextfield"> 
-                                Stojí: 
+                                Cena: 
                                 <br>
                                 <p id = "cenaZlatH" style="color:white; font-size:14px; font-weight: bold;"> </p>
                             </div>
@@ -106,7 +104,7 @@
                                 </div>
                             
                                  <div class ="game_shopTextfield"> 
-                                Stojí: 
+                                Cena: 
                                 <br>
                                 <p id = "cenaGayH" style="color:white; font-size:14px; font-weight: bold;"> </p>
                             </div>
@@ -134,7 +132,7 @@
                                 </div>
                             
                                  <div class ="game_shopTextfield"> 
-                                Stojí: 
+                                Cena: 
                                 <br>
                                 <p id = "cenaRapH" style="color:white; font-size:14px; font-weight: bold;"> </p>
                             </div>
@@ -162,12 +160,41 @@
                                 </div>
                             
                                  <div class ="game_shopTextfield"> 
-                                Stojí: 
+                                Cena: 
                                 <br>
                                 <p id = "cenaHypeH" style="color:white; font-size:14px; font-weight: bold;"> </p>
                             </div>
                         </div>
                     </button>
+                    
+                    <button type = submit onclick ="reinhart()" id = "game_shopButton4" class = "game_shopButton" style = opacity: 1;>
+                        <div class = "game_shopIcon" class = game_shopIcon5 style = "background-image:url('reinhart.png')"; 
+                             background-position: initial initial; 
+                             backgroud-repeat: initial initial;>
+                        </div>
+                        <div class ="game_shopText" >
+                            <div class = "game_shopName">Reinhart</div>
+                            <br>
+                            <div class ="game_shopTextfield"> 
+                                Generuje: 
+                                <br>
+                                 <p id = "generaceNem" style="color:green; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                            
+                            <div class ="game_shopTextfield"> 
+                                Vlastníš:
+                                <br>
+                                <p id = "pocetNem" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                                </div>
+                            
+                                 <div class ="game_shopTextfield"> 
+                                Cena: 
+                                <br>
+                                <p id = "cenaNemH" style="color:white; font-size:14px; font-weight: bold;"> </p>
+                            </div>
+                        </div>
+                    </button>
+                    
                     
                 </div>
             </div>
@@ -254,11 +281,14 @@
         var cat = 0;
         var rap = 0;
         var hype = 0;
+        var nem = 0;
         var cenacat = 10;
         var cenazlat = 100;    
         var cenagay = 1000;
         var cenarap = 10000;
         var cenahype = 100000;
+        var cenaNem = 1000000;
+            cenaNem.toLocaleString()
             
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
@@ -384,7 +414,7 @@
                 zvuk7 = new Audio ("hype.mp3");
                 zvuk7.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                hype = Math.round(hype + 100);
+                hype = Math.round(hype + 1000);
                 document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
                 document.getElementById("generaceHype").innerHTML = "+" + hype;
                 document.getElementById("cenaHypeH").innerHTML = cenahype;
@@ -392,6 +422,27 @@
             }
         }
         
+            function reinhart() {
+       
+            if (skore < cenaNem) {
+                
+                alert("Reinhart stojí " + cenaNem + " Reiníků!");
+            }
+            
+            else {
+                
+                skore = skore - cenaNem;
+                cenahype = Math.round(cenahype + (cenaNem/100) * 17)
+                zvuk8 = new Audio ("nem.mp3");
+                zvuk8.play();
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                nem = Math.round(nem + 10000);
+                document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
+                document.getElementById("generaceNem").innerHTML = "+" + nem;
+                document.getElementById("cenaNemH").innerHTML = cenaNem;
+                document.getElementById("pocetNem").innerHTML = nem / 100000;
+            }
+        }
         window.setInterval(function() {
             
             skore = Math.round(skore + cat);
@@ -409,8 +460,11 @@
             skore = Math.round(skore + hype);
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
             
+            skore = Math.round(skore + nem);
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+            
              
-            autoskore = zlat + gay + cat + rap + hype;
+            autoskore = zlat + gay + cat + rap + hype + nem;
                 document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
             
         }, 1000)
@@ -434,7 +488,14 @@
             document.getElementById("generaceHype").innerHTML = "+" + hype;
             document.getElementById("cenaHypeH").innerHTML = cenahype;
             document.getElementById("pocetHype").innerHTML = hype / 10000;
-                    
+            
+            document.getElementById("generaceNem").innerHTML = "+" + nem;
+            document.getElementById("cenaNemH").innerHTML = cenaNem;
+            document.getElementById("pocetNem").innerHTML = nem / 10000;
+               
+            conaNem.toLocaleString()
     </script>
+        
+    
     </body>
 </html>
