@@ -89,6 +89,7 @@ body {
     float: right;
     width: 410px;
     height: 100%;
+    overflow-x: hidden;
 }
 
 #game_shoppingMenu {
@@ -161,6 +162,5 @@ h1 {
 }
 
 body {
-    overflow-x: hidden;
     width: 100%;
 }
