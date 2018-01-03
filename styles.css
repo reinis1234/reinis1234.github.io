@@ -161,6 +161,6 @@ h1 {
 }
 
 body {
-    
+    overflow-x: hidden;
     width: 98%;
 }
