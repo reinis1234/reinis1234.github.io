@@ -291,19 +291,26 @@
         var cenarap = 10000;
         var cenahype = 100000;
         var cenaNem = 1000000;
-          
+        var postfix
             
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
         function clickFunc() {
             random = document.getElementById("p1").innerHTML = Math.floor((Math.random() * 10) + 1);
-            
-            if(random < 5) {
-                
+            if (score > 1000 && score < 1000000){
+                postfix = "K";
+            }else if (score > 1000000 && score < 1000000000){
+                postfix = "M";
+            }else if (score > 1000000000 && score < 1000000000000){
+                postfix = "B";
+            }else if (score > 1000000000000 && score < 1000000000000000){
+                postfix = "T";
+            }
+          
                 zvuk1 = new Audio("reinis.mp3");
                 zvuk1.play();
                 skore = skore + 1;
-                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore + postfix;
             } 
             
             else {
@@ -311,8 +318,9 @@
                 zvuk2 = new Audio("zbytecny.mp3");
                 zvuk2.play();
                 skore = skore + 1;
-                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore + postfix;
             }
+            
         }
         
         function catnis() {
