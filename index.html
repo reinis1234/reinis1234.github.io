@@ -1,17 +1,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
         
         <title>Reiniš Clicker</title>
        
     </head>
     
-    
-    <body id = "container">
-        
-        
-        
+    <body>
         <div id = "game_shopPart">
             
             <h1> 
@@ -57,7 +54,7 @@
                         </div>
                     </button>
                     
-                    <button type = submit onclick ="zlatyreinik()" id = "game_shopButton1" class = "game_shopButton" style = opacity: 1;>
+                    <button type = submit onclick ="stopAll()" id = "game_shopButton1" class = "game_shopButton" style = opacity: 1;>
                         <div class = "game_shopIcon" class = game_shopIcon1 style = "background-image:url('zlatynis.png')"; 
                              background-position: initial initial; 
                              backgroud-repeat: initial initial;>
@@ -207,19 +204,21 @@
         <p id="p1"></p>
         <p id="p2"></p>
         
-            <div class="image">
+            <div id="reinisHead">
             <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.png"></button>
         </div>
+            
+            <p class="version" style = "position: fixed;"> Reiniš Industries © 2017</p>
+            
             </div>
         
-        <div id ="panely">
         
+        <div id = donatePart>
+            
+            <div id ="panely">
             <img class="levyPanel" src="panelVertical.png">
-        
+            </div>
             
-        </div>
-            
-        <div id ="leva">
             <table id="t01">
             <caption>Top Donators</caption>
     
@@ -258,25 +257,19 @@
         </tr>
 </table>
 
-            
-         
-            
-  
-        <div id = "paypal">        
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XZNX7TANCE7B8">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-        </div>
-            
-        <p class="version" style = "position: fixed;"> Reiniš Industries © 2018</p>
+            <div id = "paypal">        
         
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="XZNX7TANCE7B8">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+           
+            </div>
         </div>
-        
-        <script>
-        var skore = 0;
+
+                var skore = 0;
         var random;
         var zvuk1, zvuk2, zvuk3, zvuk4, zvuk5, zvuk6;
         var zlat = 0;
@@ -291,26 +284,19 @@
         var cenarap = 10000;
         var cenahype = 100000;
         var cenaNem = 1000000;
-        var postfix
+            cenaNem.toLocaleString()
             
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
         function clickFunc() {
             random = document.getElementById("p1").innerHTML = Math.floor((Math.random() * 10) + 1);
-            if (score > 1000 && score < 1000000){
-                postfix = "K";
-            }else if (score > 1000000 && score < 1000000000){
-                postfix = "M";
-            }else if (score > 1000000000 && score < 1000000000000){
-                postfix = "B";
-            }else if (score > 1000000000000 && score < 1000000000000000){
-                postfix = "T";
-            }
-          
+            
+            if(random < 5) {
+                
                 zvuk1 = new Audio("reinis.mp3");
                 zvuk1.play();
                 skore = skore + 1;
-                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore + postfix;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
             } 
             
             else {
@@ -318,15 +304,13 @@
                 zvuk2 = new Audio("zbytecny.mp3");
                 zvuk2.play();
                 skore = skore + 1;
-                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore + postfix;
+                document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
             }
-            
         }
         
         function catnis() {
        
             if (skore < cenacat) {
-                alert("Catniš stojí " + cenacat + " Reiníků!");
             }
             
             else {
@@ -403,7 +387,7 @@
                 zvuk6 = new Audio ("yeah.mp3");
                 zvuk6.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                rap = Math.round(rap + 1000);
+                rap = Math.round(rap + 100);
                 document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
                 document.getElementById("generaceRap").innerHTML = "+" + rap;
                 document.getElementById("cenaRapH").innerHTML = cenarap;
@@ -425,7 +409,7 @@
                 zvuk7 = new Audio ("hype.mp3");
                 zvuk7.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                hype = Math.round(hype + 10000);
+                hype = Math.round(hype + 1000);
                 document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
                 document.getElementById("generaceHype").innerHTML = "+" + hype;
                 document.getElementById("cenaHypeH").innerHTML = cenahype;
@@ -447,7 +431,7 @@
                 zvuk8 = new Audio ("nem.mp3");
                 zvuk8.play();
                 document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
-                nem = Math.round(nem + 100000);
+                nem = Math.round(nem + 10000);
                 document.getElementById("p2").innerHTML = "Tvůj počet Reiníků za sekundu: " + autoskore;
                 document.getElementById("generaceNem").innerHTML = "+" + nem;
                 document.getElementById("cenaNemH").innerHTML = cenaNem;
@@ -494,7 +478,7 @@
             
             document.getElementById("generaceRap").innerHTML = "+" + rap;
             document.getElementById("cenaRapH").innerHTML = cenarap;
-            document.getElementById("pocetRap").innerHTML = rap / 1000;
+            document.getElementById("pocetRap").innerHTML = rap / 100;
             
             document.getElementById("generaceHype").innerHTML = "+" + hype;
             document.getElementById("cenaHypeH").innerHTML = cenahype;
@@ -503,10 +487,6 @@
             document.getElementById("generaceNem").innerHTML = "+" + nem;
             document.getElementById("cenaNemH").innerHTML = cenaNem;
             document.getElementById("pocetNem").innerHTML = nem / 10000;
-               
-            conaNem.toLocaleString()
-            </script>
-            
-            
+
     </body>
 </html>
