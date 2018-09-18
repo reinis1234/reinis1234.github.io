@@ -7,20 +7,95 @@
     </head>
     
     <body>
-        <div id = "game_shopPart">
+        
+        <div id = "hlava">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        
+            <div id="reinisHead">
+            <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.png"></button>
+        </div>
+            </div>
+        
+        
+        <div id = donatePart>
             
+            <div id ="panely">
+            <img class="levyPanel" src="panelVertical.png">
+            
+            </div>
+            
+            <table id="t01">
+            <caption>Top Donators</caption>
+    
+            <tr>
+    <th>Jméno</th>
+    <th>Částka</th> 
+                
+                <tr>
+    <td>Tomáš Vrkota</td>
+    <td>50Kč</td> 
+  </tr>
+          
+            <tr>
+    <td>Pavel Novotný</td>
+    <td>11Kč</td> 
+  </tr>
+   
+            <tr>
+    <td>Matyáš Doležal</td>
+    <td>10Kč</td> 
+  </tr>
+     
+            <tr>
+    <td>Antonín Hnízdo</td>
+    <td>7Kč</td> 
+  </tr>
+     
+            <tr>
+    <td>Jakub Kozler</td>
+    <td>5Kč</td> 
+  </tr>
+     
+            <tr>
+    <td>Štěpán Beran</td>
+    <td>3Kč</td> 
+        </tr>
+</table>
+
+            <div id = "paypal">  
+                
+                <iframe src="https://discordapp.com/widget?id=428194365245095957&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe> 
+        
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="XZNX7TANCE7B8">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+           
+            </div>
+            
+        </div>
+        
+        
+        <div id = "game_shopPart">
             <h1> 
             Reinišové
             </h1>
-           
+            
+            <div id ="panelh">
+            <img src = "panelHorizontal.png" alt = "panel" style = " margin-bottom: 5px;" id = "horizont">
+            </div>
+            
             <img class="pravyPanel" src="panelVertical.png">
             
+            
+            <p class="version" style = "position: fixed;"> Reiniš Industries © 2018</p>
            
             <div id = "game_shoppingMenu">
                 
-                <div id ="panelh">
-            <img src = "panelHorizontal.png" alt = "panel" style = " margin-bottom: 5px;" id = "horizont">
-            </div>
+                
                 
                 <div id ="game_shoppingIcons">
                     
@@ -196,76 +271,9 @@
             </div>
         </div>
         
-        <div id = "hlava">
-        <p id="p1"></p>
-        <p id="p2"></p>
-        
-            <div id="reinisHead">
-            <button class="headbutton" type="submit" onclick="clickFunc()"><img class="image" src="reinishead.png"></button>
-        </div>
-            
-            <p class="version" style = "position: fixed;"> Reiniš Industries © 2018</p>
-            
-            </div>
         
         
-        <div id = donatePart>
-            
-            <div id ="panely">
-            <img class="levyPanel" src="panelVertical.png">
-            </div>
-            
-            <table id="t01">
-            <caption>Top Donators</caption>
-    
-            <tr>
-    <th>Jméno</th>
-    <th>Částka</th> 
-                
-                <tr>
-    <td>Tomáš Vrkota</td>
-    <td>50Kč</td> 
-  </tr>
-          
-            <tr>
-    <td>Pavel Novotný</td>
-    <td>11Kč</td> 
-  </tr>
-   
-            <tr>
-    <td>Matyáš Doležal</td>
-    <td>10Kč</td> 
-  </tr>
-     
-            <tr>
-    <td>Antonín Hnízdo</td>
-    <td>7Kč</td> 
-  </tr>
-     
-            <tr>
-    <td>Jakub Kozler</td>
-    <td>5Kč</td> 
-  </tr>
-     
-            <tr>
-    <td>Štěpán Beran</td>
-    <td>3Kč</td> 
-        </tr>
-</table>
-
-            <div id = "paypal">  
-                
-                <iframe src="https://discordapp.com/widget?id=428194365245095957&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
         
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="XZNX7TANCE7B8">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-           
-            </div>
-        </div>
         
         <script>
 
@@ -284,7 +292,6 @@
         var cenarap = 10000;
         var cenahype = 100000;
         var cenaNem = 1000000;
-            cenaNem.toLocaleString()
             
         document.getElementById("p1").innerHTML = "Tvůj počet Reiníků je: " + skore;
         
