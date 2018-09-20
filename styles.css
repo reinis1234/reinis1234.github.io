@@ -2,6 +2,9 @@ body {
    position: relative;
    background-image: url("light-veneer.png");
    background-color: #cccccc;
+   margin:0;
+   padding:0;
+
 }
 
 #hlava{
@@ -12,23 +15,23 @@ body {
 }
 
 .image{
-    
     display: flex;
-    right: %;
     bottom 45%;
     border-radius: 50%;
 }
 
 #p1 {
     font: Sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
 }
 
 #p2 {
     font: Sans-serif;
     font-size: 20px;
+    margin-left: 10px;
 }
 
 .headbutton {
@@ -56,6 +59,8 @@ body {
     height: 100%;
 }
 
+
+
 .pravyPanel {
     width:16px;
 	height:100%;
@@ -66,8 +71,8 @@ body {
 }
 
 #paypal {
-    bottom: 40%;
-    right: 30%;
+    bottom: 30%;
+    right: 43%;
     position: fixed;
 }
     
@@ -76,11 +81,15 @@ table, th, td {
 }
 
 table#t01 {
-    width: 30%; 
-    bottom: 0%;
+    width: 27%;
+    bottom: 5%;
     right: 35%;
-    position: fixed;
-    margin-bottom: 10px;
+    position: absolute; 
+}
+
+#discord{
+    right: 37%;
+    position: absolute;
 }
 
 #cat {
@@ -90,7 +99,7 @@ table#t01 {
 
 #game_shopPart {
     float: right;
-    width: 410px;
+    width: 420px;
     height: 100%;
     overflow-x: hidden;
 }
@@ -98,7 +107,8 @@ table#t01 {
 #game_shoppingMenu {
     float: left;
     width: 100%;
-    margin: 10px;
+    margin-left: 10px;
+    
 }
 
 .game_shopButton {
@@ -153,3 +163,5 @@ h1 {
     margin-bottom: 10px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+
